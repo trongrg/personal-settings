@@ -1,0 +1,4 @@
+bindkey "\e[A": history-search-backward
+bindkey "\e[B": history-search-forward
+#bindkey "\e[C": forward-char
+#bindkey "\e[D": backward-char
