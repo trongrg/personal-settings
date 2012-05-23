@@ -1,0 +1,36 @@
+[user]
+  name = Trong Tran
+  email = trongrg@gmail.com
+[alias]
+  ci = commit
+  co = checkout
+  st = status --short
+  lg = log --oneline --decorate -n 20
+  wd = diff --word-diff
+  dc = diff --cached
+  wdc = diff --cached --word-diff
+  pom = push origin master
+  po = push origin
+  ca = commit --amend
+[github]
+  user = trongrg
+[color]
+  diff = auto
+  status = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
+[diff]
+  tool = kdiff3
+[difftool "kdiff3"]
+  cmd = kdiff3\"$LOCAL\" \"$REMOTE\"
+[mergetool "kdiff3"]
+  trustexitcode = false
+  cmd = kdiff3 --merge --result=$MERGED $LOCAL $BASE $REMOTE
+[merge]
+  tool = kdiff3
+[mergetool]
+  keepBackup = false
+[core]
+  editor = /usr/bin/vim
