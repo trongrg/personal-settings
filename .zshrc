@@ -10,9 +10,9 @@ ZSH_THEME="trongrg"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cucumber=nocorrect bundle exec cucumber -r features --drb
-alias rspec=nocorrect bunlde exec rspec -X
-alias bundle=nocorrect bundle
+alias cucumber='nocorrect bundle exec cucumber -r features --drb'
+alias rspec='nocorrect bunlde exec rspec -X'
+alias bundle='nocorrect bundle'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
