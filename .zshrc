@@ -11,8 +11,11 @@ ZSH_THEME="trongrg"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cucumber='nocorrect bundle exec cucumber -r features --drb'
-alias rspec='nocorrect bunlde exec rspec -X'
+alias rspec='nocorrect bundle exec rspec -X'
 alias bundle='nocorrect bundle'
+alias git='nocorrect git'
+alias ack='nocorrect ack'
+alias guard='nocorrect bundle exec guard -i -g drb'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -41,7 +44,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:$HOME/pear/bin
 
 source ~/.git-completion
 source ~/.inputrc

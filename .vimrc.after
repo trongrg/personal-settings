@@ -187,3 +187,4 @@ autocmd BufWinLeave * call clearmatches()
 
 autocmd BufWritePre * :%s/\s\+$//e
 set gfn=Monospace\ 12
+au BufRead,BufNewFile *.twig set ft=jinja
